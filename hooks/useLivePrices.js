@@ -25,10 +25,11 @@ const useLivePrices = () => {
         usd: parseFloat(rates.USD?.Buying) || 0,
         eur: parseFloat(rates.EUR?.Buying) || 0,
         gram_gold: parseFloat(rates.GRA?.Buying) || 0,
-        quarter_gold: parseFloat(rates.CEY?.Buying) || 0,
-        half_gold: parseFloat(rates.YAR?.Buying) || 0,
-        full_gold: parseFloat(rates.TAM?.Buying) || 0,
-        cumh_gold: parseFloat(rates.CUM?.Buying) || 0,
+        quarter_gold: parseFloat(rates.CEYREKALTIN?.Buying) || 0,
+        half_gold: parseFloat(rates.YARIMALTIN?.Buying) || 0,
+        full_gold: parseFloat(rates.TAMALTIN?.Buying) || 0,
+        cumh_gold: parseFloat(rates.CUMHURIYETALTINI?.Buying) || 0,
+        
       });
     } catch (error) {
       console.error('Fiyatlar alınamadı:', error);
